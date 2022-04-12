@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/header"
+        android:id="@+id/screen_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mountains"
@@ -33,31 +33,74 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/username"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_width="280dp"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Användarnamn"/>
+                app:layout_constraintEnd_toEndOf="parent">
 
-            <EditText
-                app:layout_constraintTop_toBottomOf="@id/username"
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars"
+                    />
+
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Välkommen"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/input_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/card_header"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/password"
-                android:layout_width="280dp"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="lösenord"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="50dp">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="280dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Användarnamn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="280dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="lösenord"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/username" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
