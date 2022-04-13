@@ -3,7 +3,7 @@
     <string name="create_account"><u>Skapa konto</u></string>
     <string name="welcome_message">Välkommen</string>
     <string name="title">Mountains</string>
-    <string name="username">Användarnamn</string>
-    <string name="password">Lösenord</string>
+    <string name="username"><i>Användarnamn</i></string>
+    <string name="password"><i>Lösenord</i></string>
     <string name="login">Logga in</string>
 </resources>
