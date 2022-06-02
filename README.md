@@ -83,4 +83,4 @@ Längst ner i card viewen finns en knapp för att logga in samt en liten text vi
     android:textStyle="italic"
     android:textSize="12sp" />
 ```
-P.g.a strul med Android Studios kan inte appen starta och därför kan jag inte ta en skärmdump.
+![](Screenshot.png)
